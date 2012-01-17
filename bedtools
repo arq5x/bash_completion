@@ -1,4 +1,4 @@
-echo '_bedtools()
+_bedtools()
 {
   local cur prev opts
   COMPREPLY=()
@@ -18,4 +18,4 @@ echo '_bedtools()
   esac
   return 0
 }
-complete -F _bedtools -o default bedtools' > /usr/local/etc/bash_completion.d/bedtools
+complete -F _bedtools -o default bedtools

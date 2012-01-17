@@ -1,4 +1,4 @@
-echo '_samtools()
+_samtools()
 {
   local cur prev opts
   COMPREPLY=()
@@ -17,4 +17,4 @@ echo '_samtools()
   esac
   return 0
 }
-complete -F _samtools -o default samtools' > /usr/local/etc/bash_completion.d/samtools
+complete -F _samtools -o default samtools
