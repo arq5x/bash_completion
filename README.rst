@@ -8,7 +8,15 @@ and get::
 
 	samtools view
 
-Or::
+or::
+
+	samtools f[TAB]
+	
+and get::
+
+	faidx     fixmate   flagstat
+
+or::
 
     bedt[TAB] in[TAB]
 
@@ -16,6 +24,14 @@ and get::
 
     bedtools intersect
 
+
+or::
+
+    bedt[TAB] g[TAB]
+
+and get::
+
+	genomecov  getfasta   groupby
 
 Installation
 ============
