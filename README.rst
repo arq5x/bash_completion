@@ -24,7 +24,7 @@ https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completio
 
 2. Second, copy the scripts in this repo to the appropriate (depending on how you installed bash_completion) directory.  For example, with homebrew, it would be::
 
-    usr/local/etc/bash_completion.d/
+    /usr/local/etc/bash_completion.d/
 
 
 3. Source your bash_profile and be on your way.
