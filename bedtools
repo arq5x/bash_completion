@@ -5,7 +5,7 @@ echo '_bedtools()
   cur="${COMP_WORDS[COMP_CWORD]}"
   prev="${COMP_WORDS[COMP_CWORD-1]}"
 
-  opts="intersect window closest coverage genomecov merge cluster
+  opts="intersect window closest coverage map genomecov merge cluster
         complement subtract slop flank sort shuffle annotate multiinter
         unionbedg pairtobed pairtopair bamtobed bedtobam bedpetobam
         bed12tobed6 getfasta maskfasta nuc multicov tag overlap igv links
