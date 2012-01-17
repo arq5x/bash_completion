@@ -1,4 +1,6 @@
-Bash_completion scripts for genomics tools.  This allows you to do things like::
+Bash_completion scripts for genomics tools.  These scripts are based on the work of Charles Plessy.  Many thanks to Charles for taking the initiative to do this.  I enjoy convenience very much.
+
+It allows you to do things like::
 
     samto[TAB] v[TAB]
 
