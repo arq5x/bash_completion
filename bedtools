@@ -1,0 +1,21 @@
+echo '_bedtools()
+{
+  local cur prev opts
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+  opts="intersect window closest coverage genomecov merge cluster
+        complement subtract slop flank sort shuffle annotate multiinter
+        unionbedg pairtobed pairtopair bamtobed bedtobam bedpetobam
+        bed12tobed6 getfasta maskfasta nuc multicov tag overlap igv links
+        makewindows groupby"
+
+  case $prev in
+      bedtools)
+          COMPREPLY=( $(compgen -f -W "${opts}" -- "$cur") )
+          ;;
+  esac
+  return 0
+}
+complete -F _bedtools -o default bedtools' > /usr/local/etc/bash_completion.d/bedtools

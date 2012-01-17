@@ -1,0 +1,20 @@
+echo '_samtools()
+{
+  local cur prev opts
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  prev="${COMP_WORDS[COMP_CWORD-1]}"
+  opts="view sort mpileup depth 
+        faidx tview index idxstats 
+        fixmate flagstat calmd merge 
+        rmdup reheader cat targetcut 
+        phase pad2unpad"
+
+  case $prev in
+      samtools)
+          COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+          ;;
+  esac
+  return 0
+}
+complete -F _samtools -o default samtools' > /usr/local/etc/bash_completion.d/samtools
