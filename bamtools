@@ -1,0 +1,19 @@
+_bamtools()
+{
+  local cur prev opts
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  prev="${COMP_WORDS[COMP_CWORD-1]}"
+  opts="convert count coverage filter 
+        header index merge random 
+        resolve revert sort split 
+        stats"
+
+  case $prev in
+      bamtools)
+          COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+          ;;
+  esac
+  return 0
+}
+complete -F _bamtools -o default bamtools
