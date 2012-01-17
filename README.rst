@@ -6,6 +6,14 @@ and get::
 
 	samtools view
 
+Or::
+
+    bedt[TAB] in[TAB]
+
+and get::
+
+    bedtools intersect
+
 
 Installation
 ============
