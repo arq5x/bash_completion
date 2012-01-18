@@ -2,7 +2,7 @@ Bash_completion scripts for genomics tools.  These scripts are based on the work
 
 It allows you to do things like::
 
-    samto[TAB] v[TAB]
+    samto[TAB][TAB] v[TAB][TAB]
 
 and get::
 
@@ -10,7 +10,7 @@ and get::
 
 or::
 
-	samtools f[TAB]
+	samtools f[TAB][TAB]
 	
 and get::
 
@@ -18,7 +18,7 @@ and get::
 
 or::
 
-    bedt[TAB] in[TAB]
+    bedt[TAB][TAB] in[TAB][TAB]
 
 and get::
 
@@ -27,7 +27,7 @@ and get::
 
 or::
 
-    bedt[TAB] g[TAB]
+    bedt[TAB][TAB] g[TAB][TAB]
 
 and get::
 
