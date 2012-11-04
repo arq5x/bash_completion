@@ -6,10 +6,10 @@ _bedtools()
   prev="${COMP_WORDS[COMP_CWORD-1]}"
 
   opts="intersect window closest coverage map genomecov merge cluster
-        complement subtract slop flank sort shuffle annotate multiinter
-        unionbedg pairtobed pairtopair bamtobed bedtobam bedpetobam
-        bed12tobed6 getfasta maskfasta nuc multicov tag overlap igv links
-        makewindows groupby"
+        complement subtract slop flank sort random shuffle annotate multiinter
+        unionbedg pairtobed pairtopair bamtobed bedtobam bamtofastq bedpetobam
+        bed12tobed6 getfasta maskfasta nuc multicov tag jaccard overlap igv
+        links makewindows groupby expand"
 
   case $prev in
       bedtools)
